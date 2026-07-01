@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keepgreen · Muestras de dirección (color + tono)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#f3f4f2;color:#1f2723;line-height:1.6;padding:36px 18px 80px}
+.wrap{max-width:1080px;margin:0 auto}
+.h{margin-bottom:8px;font-size:1.9rem;font-weight:800;letter-spacing:-.02em}
+.sub{color:#6b716c;margin-bottom:30px;max-width:70ch}
+h2.sec{font-size:1.15rem;font-weight:800;margin:42px 0 6px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+h2.sec .tag{font-size:.7rem;font-weight:700;background:#1f2723;color:#fff;padding:3px 9px;border-radius:999px;letter-spacing:.05em}
+.note{color:#6b716c;font-size:.92rem;margin-bottom:18px;max-width:72ch}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid #e4e6e2;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(31,39,35,.06)}
+.swatches{display:flex;height:64px}
+.swatches div{flex:1;display:flex;align-items:flex-end;justify-content:center;padding-bottom:5px;font-size:.62rem;font-weight:700;color:rgba(255,255,255,.92);font-family:monospace}
+.card .pad{padding:18px}
+.card h3{font-size:1.05rem;font-weight:800;margin-bottom:3px}
+.card .ref{font-size:.76rem;color:#9aa09a;margin-bottom:14px}
+.demo{border-radius:10px;padding:18px;margin-bottom:12px}
+.demo .eyebrow{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+.demo .dh{font-size:1.15rem;font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.demo .btn{display:inline-block;font-size:.8rem;font-weight:700;padding:10px 16px;border-radius:8px;border:none}
+.hexrow{font-family:monospace;font-size:.72rem;color:#6b716c}
+.pick{margin-top:6px;font-size:.8rem;font-weight:700;color:#5DA130}
+
+/* copy options */
+.copy-opt{background:#fff;border:1px solid #e4e6e2;border-radius:14px;padding:20px 22px}
+.copy-opt .lbl{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9aa09a;margin-bottom:10px}
+.copy-opt .ch{font-size:1.45rem;font-weight:800;letter-spacing:-.02em;line-height:1.12;color:#16201a;font-family:'Fraunces',serif}
+.copy-opt.sans .ch{font-family:'Inter',sans-serif}
+.copy-opt .cs{color:#586059;margin-top:8px;font-size:.98rem}
+.flag{font-size:.78rem;color:#9aa09a;margin-top:12px}
+@media(max-width:820px){.g3,.g2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="h">Muestras de dirección — vétalas antes de montar</div>
+  <p class="sub">Nada de páginas todavía. Solo color y tono, para acertar a la primera. Dime: <b>1 paleta para A</b>, <b>1 paleta para el rebrand (B)</b> y <b>1 tono de copy</b> (o mézclalos). Lo que no te sirva, fuera.</p>
+
+  <!-- A -->
+  <h2 class="sec"><span class="tag">A</span> Mantener la marca Keepgreen</h2>
+  <p class="note">Anclada en el verde REAL de tu web (<b>#4c8032</b>, el del logo, barra y footer). Fondo blanco, casi sin negro, mucho aire. El acento de acción puede ser el verde mismo o el magenta real de tu tienda (#ed0069). Elige cuál.</p>
+  <div class="grid g2">
+    <div class="card">
+      <div class="swatches"><div style="background:#ffffff;color:#888">#fff</div><div style="background:#4c8032">#4c8032</div><div style="background:#eef3e7;color:#4c8032">#eef3e7</div><div style="background:#2c2d2e">#2c2d2e</div></div>
+      <div class="pad">
+        <h3>A1 · Verde Keepgreen + CTA verde</h3>
+        <div class="ref">Marca real, acento de acción en el propio verde</div>
+        <div class="demo" style="background:#fff;border:1px solid #e8eae6">
+          <div class="eyebrow" style="color:#4c8032">Fabricante · Crevillent</div>
+          <div class="dh" style="color:#1f2723">Césped artificial premium,<br>fabricado en España</div>
+          <span class="btn" style="background:#4c8032;color:#fff">Pedir muestra gratis</span>
+        </div>
+        <div class="hexrow">blanco · #4c8032 · #eef3e7 · texto #2c2d2e</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="swatches"><div style="background:#ffffff;color:#888">#fff</div><div style="background:#4c8032">#4c8032</div><div style="background:#ed0069">#ed0069</div><div style="background:#2c2d2e">#2c2d2e</div></div>
+      <div class="pad">
+        <h3>A2 · Verde Keepgreen + CTA magenta real</h3>
+        <div class="ref">100% fiel a los tokens actuales de tu tienda</div>
+        <div class="demo" style="background:#fff;border:1px solid #e8eae6">
+          <div class="eyebrow" style="color:#4c8032">Fabricante · Crevillent</div>
+          <div class="dh" style="color:#1f2723">Césped artificial premium,<br>fabricado en España</div>
+          <span class="btn" style="background:#ed0069;color:#fff">Pedir muestra gratis</span>
+        </div>
+        <div class="hexrow">blanco · #4c8032 · CTA #ed0069 · texto #2c2d2e</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <h2 class="sec"><span class="tag">B</span> Rebrand — fundamentado en webs de césped reales</h2>
+  <p class="note">Tres mundos de color sacados de cómo se ven las marcas premium del sector (Royal Grass, Easigrass, jardinartificial). Verde protagonista + un neutro frío o cálido. <b>Cero negro.</b></p>
+  <div class="grid g3">
+    <div class="card">
+      <div class="swatches"><div style="background:#fbfaf6;color:#888">#fbfaf6</div><div style="background:#5DA130">#5DA130</div><div style="background:#38485a">#38485a</div><div style="background:#eef1ed;color:#38485a">#eef1ed</div></div>
+      <div class="pad">
+        <h3>B1 · Verde vivo + pizarra</h3>
+        <div class="ref">Inspirado en Royal Grass · fresco y moderno</div>
+        <div class="demo" style="background:#fbfaf6">
+          <div class="eyebrow" style="color:#5DA130">Verde todo el año</div>
+          <div class="dh" style="color:#38485a">Toca el césped<br>antes de elegirlo</div>
+          <span class="btn" style="background:#5DA130;color:#fff">Pedir muestra gratis</span>
+        </div>
+        <div class="hexrow">hueso · verde #5DA130 · pizarra #38485a</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="swatches"><div style="background:#f3efe6;color:#888">#f3efe6</div><div style="background:#1f4a35">#1f4a35</div><div style="background:#d8a24a">#d8a24a</div><div style="background:#e7e1d3;color:#1f4a35">#e7e1d3</div></div>
+      <div class="pad">
+        <h3>B2 · Verde bosque + crema cálida</h3>
+        <div class="ref">Inspirado en jardinartificial · natural y premium</div>
+        <div class="demo" style="background:#f3efe6">
+          <div class="eyebrow" style="color:#1f4a35">Fabricante desde Crevillent</div>
+          <div class="dh" style="color:#1f4a35">Toca el césped<br>antes de elegirlo</div>
+          <span class="btn" style="background:#1f4a35;color:#fff">Pedir muestra gratis</span>
+        </div>
+        <div class="hexrow">crema · bosque #1f4a35 · ocre #d8a24a</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="swatches"><div style="background:#ffffff;color:#888">#fff</div><div style="background:#14532d">#14532d</div><div style="background:#f2c53d;color:#14532d">#f2c53d</div><div style="background:#eef0ec;color:#14532d">#eef0ec</div></div>
+      <div class="pad">
+        <h3>B3 · Verde profundo + amarillo sol</h3>
+        <div class="ref">Inspirado en Easigrass · optimista y enérgico</div>
+        <div class="demo" style="background:#fff;border:1px solid #eceee9">
+          <div class="eyebrow" style="color:#14532d">Verde todo el año</div>
+          <div class="dh" style="color:#14532d">Toca el césped<br>antes de elegirlo</div>
+          <span class="btn" style="background:#f2c53d;color:#14532d">Pedir muestra gratis</span>
+        </div>
+        <div class="hexrow">blanco · verde #14532d · sol #f2c53d</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COPY -->
+  <h2 class="sec"><span class="tag">TONO</span> Cómo quiero que suenen los textos</h2>
+  <p class="note">Mismo mensaje, cuatro registros. Sin metáforas ni "teletienda". Dime cuál es el tuyo (o qué cambiarías).</p>
+  <div class="grid g2">
+    <div class="copy-opt sans">
+      <div class="lbl">T1 · Sobrio y factual</div>
+      <div class="ch">Césped artificial premium, fabricado en España.</div>
+      <div class="cs">Pide una muestra gratuita y recibe tu presupuesto en 24&nbsp;horas. Diez años de garantía.</div>
+      <div class="flag">Frases cortas, afirmativas, sin adornos. Tipo Apple/Muji.</div>
+    </div>
+    <div class="copy-opt sans">
+      <div class="lbl">T2 · Directo y útil</div>
+      <div class="ch">Mira y toca el césped antes de elegirlo.</div>
+      <div class="cs">Te enviamos muestras gratis a casa, con tu presupuesto, en 24&nbsp;horas. Sin compromiso.</div>
+      <div class="flag">Centrado en lo práctico y la acción, sin venta agresiva.</div>
+    </div>
+    <div class="copy-opt">
+      <div class="lbl">T3 · Editorial / aspiracional</div>
+      <div class="ch">El verde que se queda todo el año.</div>
+      <div class="cs">Césped artificial de fabricante. Lo recibes en casa, lo comparas con tu luz y decides con calma.</div>
+      <div class="flag">Más evocador pero sin cursilería. Para el rebrand.</div>
+    </div>
+    <div class="copy-opt sans">
+      <div class="lbl">T4 · De confianza / cercano</div>
+      <div class="ch">Te ayudamos a acertar con tu césped.</div>
+      <div class="cs">Somos fabricantes. Te mandamos muestras gratis y te asesoramos hasta que eliges el modelo que encaja.</div>
+      <div class="flag">Tono humano, foco en asesoramiento y fabricante.</div>
+    </div>
+  </div>
+
+  <p class="flag" style="margin-top:34px;font-size:.95rem;color:#586059">→ Respóndeme con algo tipo: <b>"A1 + B2 + T1"</b>, y si quieres cambiar un color o una frase concreta, dímelo. Con eso monto las dos páginas ya bien.</p>
+</div>
+</body>
+</html>

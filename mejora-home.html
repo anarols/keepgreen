@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keepgreen · Home mejorada (cabecera)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#4c8032; --green-d:#3c6627; --green-l:#eef3e7;
+  --accent:#ed0069; --accent-h:#c90059;     /* CTA magenta real */
+  --title:#2f4a2a;                            /* verde oscuro para títulos (sin negro) */
+  --body:#3f4a39; --muted:#6b7165;
+  --bg:#ffffff; --alt:#f7f7f7; --line:#e6e7e4;
+  --star:#FFAA47;
+  --font:'Montserrat',system-ui,sans-serif;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--body);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{color:var(--title);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:inherit;font-weight:700;font-size:1rem;border:none;border-radius:8px;padding:15px 26px;cursor:pointer;transition:transform .15s,background .2s;line-height:1}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(237,0,105,.3)}
+.btn-accent:hover{background:var(--accent-h);transform:translateY(-2px)}
+.btn-out{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.8)}
+.btn-out:hover{background:#fff;color:var(--title)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* announcement */
+.announce{background:var(--green);color:#fff;text-align:center;font-size:.84rem;font-weight:600;padding:9px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid #ececec}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.nav .logo img{height:38px}
+.nav ul{display:flex;gap:24px;list-style:none}
+.nav ul a{font-weight:600;font-size:.92rem;color:var(--body)}
+.nav ul a:hover{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-phone{font-weight:700;color:var(--green);font-size:.92rem}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{display:block;width:24px;height:2px;background:var(--title);margin:5px 0;border-radius:2px}
+
+/* HERO — misma composición que la actual, elevada */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,32,16,.62) 0%,rgba(20,32,16,.34) 40%,rgba(20,32,16,.05) 68%,transparent 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.hero-content{max-width:560px;color:#fff}
+.hero .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#dfeccf;margin-bottom:16px}
+.hero h1{color:#fff;font-size:clamp(2.3rem,4.8vw,3.7rem);font-weight:800;text-shadow:0 2px 18px rgba(0,0,0,.25)}
+.hero p.sub{color:rgba(255,255,255,.94);font-size:clamp(1.05rem,1.5vw,1.22rem);margin:18px 0 28px;max-width:46ch;text-shadow:0 1px 10px rgba(0,0,0,.2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:30px}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:#fff}
+.hero-trust .st{color:var(--star)}
+.hero-trust svg{width:18px;height:18px;stroke:#dfeccf}
+
+/* trust strip — los 4 sellos */
+.trust{background:var(--bg);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:30px 24px}
+.tcell{display:flex;align-items:center;gap:14px}
+.tcell .ic{flex:none;width:46px;height:46px;border-radius:12px;background:var(--green-l);display:grid;place-items:center}
+.tcell .ic svg{width:24px;height:24px;stroke:var(--green);fill:none;stroke-width:1.8}
+.tcell b{display:block;color:var(--title);font-size:.98rem}
+.tcell small{color:var(--muted);font-size:.84rem}
+
+/* mini banner under */
+.subline{background:var(--green-l);text-align:center;padding:14px 16px;color:var(--green-d);font-weight:700;font-size:.95rem;letter-spacing:.01em}
+
+@media(max-width:900px){
+  .nav ul,.nav-phone{display:none}
+  .burger{display:block}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:18px}
+  .hero{min-height:560px}
+  .hero-bg::after{background:linear-gradient(180deg,rgba(20,32,16,.3),rgba(20,32,16,.66))}
+}
+@media(max-width:520px){
+  .trust .wrap{grid-template-columns:1fr}
+  .hero-cta .btn{flex:1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="announce">Envíos gratis desde 160 € · Muestras gratis en 24 h · Garantía de 10 años</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo" aria-label="Keepgreen"><img src="https://cdn.shopify.com/s/files/1/0962/6746/9138/files/logo-keepgreen.png" alt="Keepgreen"></a>
+    <nav aria-label="Principal"><ul>
+      <li><a href="#">Césped artificial</a></li>
+      <li><a href="#">Modelos</a></li>
+      <li><a href="#">Espacios</a></li>
+      <li><a href="#">Tutoriales</a></li>
+      <li><a href="#">Nuestros centros</a></li>
+    </ul></nav>
+    <div class="nav-right">
+      <span class="nav-phone">96 540 38 11</span>
+      <a href="#" class="btn btn-accent" style="padding:11px 20px;font-size:.9rem">Muestras gratis</a>
+      <button class="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO: misma composición de tu home (foto a sangre + texto izquierda + botón magenta), pulida -->
+<section class="hero">
+  <div class="hero-bg"><img src="/assets/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Empieza a disfrutar de tus espacios de exterior</span>
+      <h1>Césped artificial premium para el hogar</h1>
+      <p class="sub">Máxima durabilidad, mínimo mantenimiento y una apariencia 100% natural. Pídelo en casa con muestras gratis y presupuesto en 24 horas.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-accent">Quiero presupuesto y muestras GRATIS</a>
+        <a href="#" class="btn btn-out">Ver los modelos</a>
+      </div>
+      <div class="hero-trust">
+        <span><span class="st">★★★★★</span> 4,8 · +1.200 opiniones</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> Garantía 10 años</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h13v8H3zM16 10h3l2 3v2h-5z"/><circle cx="7" cy="17" r="1.6"/><circle cx="17" cy="17" r="1.6"/></svg> Envío gratis +160 €</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP: los 4 sellos de tu home, limpios -->
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 15.9 6.9 18l1.2-5.6L4 8.6 9.6 8z"/></svg></span><div><b>Calidades premium</b><small>Fabricación propia</small></div></div>
+    <div class="tcell"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg></span><div><b>Financiación a medida</b><small>Paga a plazos</small></div></div>
+    <div class="tcell"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><div><b>Garantía de 10 años</b><small>Respaldada por el fabricante</small></div></div>
+    <div class="tcell"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0116 0v5a2 2 0 01-2 2h-2v-6h4"/><path d="M4 13v4a2 2 0 002 2h2v-6H4z"/></svg></span><div><b>Te asesoramos</b><small>Antes, durante y después</small></div></div>
+  </div>
+</div>
+<div class="subline">Máxima durabilidad · Mínimo mantenimiento · Apariencia 100% natural</div>
+
+</body>
+</html>

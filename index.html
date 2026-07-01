@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keepgreen · Rediseño Home — 2 propuestas</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:#f6f2e9;color:#26241d;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+.head{text-align:center;max-width:640px;margin-bottom:44px}
+.head img{height:42px;margin-bottom:22px}
+h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.01em}
+.head p{color:#857f70;margin-top:12px;font-size:1.05rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:840px;width:100%}
+.opt{display:block;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 14px 40px rgba(38,36,29,.12);transition:transform .2s,box-shadow .2s;background:#fff}
+.opt:hover{transform:translateY(-6px);box-shadow:0 26px 60px rgba(38,36,29,.2)}
+.opt .ph{height:170px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Fraunces',serif;font-size:2.6rem}
+.a .ph{background:linear-gradient(135deg,#4c8032,#3c6627)}
+.b .ph{background:linear-gradient(135deg,#3c6627,#4c8032)}
+.opt .body{padding:24px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#5a6f3f;margin-bottom:8px}
+.opt h2{font-family:'Fraunces',serif;font-weight:500;font-size:1.4rem;margin-bottom:8px}
+.opt p{color:#857f70;font-size:.92rem;line-height:1.5}
+.cta{display:inline-block;margin-top:16px;font-weight:700;font-size:.9rem;color:#bf5a36}
+.foot{margin-top:40px;color:#a8a294;font-size:.82rem;text-align:center;max-width:620px;line-height:1.6}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="head">
+    <img src="https://cdn.shopify.com/s/files/1/0962/6746/9138/files/logo-keepgreen.png" alt="Keepgreen">
+    <h1>Rediseño de la Home · Dos direcciones</h1>
+    <p>Misma estrategia (captar leads · muestras = presupuesto). Dos estudios visualmente distintos. Elige una para llevarla a producción.</p>
+  </div>
+  <div class="grid">
+    <a class="opt a" href="propuesta-a.html">
+      <div class="ph">A</div>
+      <div class="body">
+        <span class="tag">Cabecera dividida</span>
+        <h2>Texto + foto separados</h2>
+        <p>Cabecera limpia: titular y botón a la izquierda, foto a la derecha. Verde Keepgreen, magenta solo en el botón, sin negro.</p>
+        <span class="cta">Ver propuesta A →</span>
+      </div>
+    </a>
+    <a class="opt b" href="propuesta-b.html">
+      <div class="ph">B</div>
+      <div class="body">
+        <span class="tag">Cabecera a sangre</span>
+        <h2>Foto a pantalla completa</h2>
+        <p>Cabecera inmersiva: foto a sangre con titular centrado y sobrio encima. Misma marca y mismo estilo limpio que A.</p>
+        <span class="cta">Ver propuesta B →</span>
+      </div>
+    </a>
+  </div>
+  <p class="foot">Fotos, copy y tokens reales de Keepgreen · Maquetas navegables · Verificadas en desktop y móvil</p>
+</body>
+</html>

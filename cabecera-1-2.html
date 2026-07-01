@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keepgreen · Cabeceras 1 y 2 afinadas</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#4c8032; --green-d:#3c6627; --green-l:#eef3e7;
+  --accent:#ed0069; --accent-h:#c90059;
+  --title:#2f4a2a; --body:#3f4a39; --muted:#737a6c;
+  --line:#e6e7e4; --font:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--body);background:#e9ebe7;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.page{max-width:1240px;margin:0 auto;padding:26px 14px 80px}
+.intro{margin-bottom:22px}
+.intro h1{font-size:1.5rem;color:var(--title);font-weight:800;letter-spacing:-.02em;margin-bottom:4px}
+.intro p{color:#5b6356;max-width:80ch;font-size:.96rem}
+.frame{background:#fff;border:1px solid #d8dbd4;border-radius:16px;overflow:hidden;margin-bottom:28px;box-shadow:0 12px 34px rgba(31,39,35,.1)}
+.tag{display:flex;align-items:center;gap:12px;padding:12px 18px;background:#fafbf9;border-bottom:1px solid var(--line)}
+.tag .num{background:var(--accent);color:#fff;font-weight:800;font-size:.85rem;width:26px;height:26px;border-radius:50%;display:grid;place-items:center}
+.tag b{color:var(--title);font-size:.98rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-weight:700;font-size:1rem;border:none;border-radius:8px;padding:16px 28px;line-height:1;cursor:pointer;transition:transform .15s,background .2s}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(237,0,105,.28)}
+.btn-accent:hover{background:var(--accent-h);transform:translateY(-2px)}
+.btn-outg{background:#fff;color:var(--title);border:1.5px solid var(--line)}
+.btn-outg:hover{border-color:var(--green);color:var(--green)}
+.btn-out{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.85)}
+.btn-out:hover{background:#fff;color:var(--title)}
+.eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green);display:inline-block;margin-bottom:18px}
+.h{font-size:clamp(2.1rem,3.6vw,3.3rem);font-weight:800;letter-spacing:-.025em;line-height:1.07;color:var(--title)}
+.sub{font-size:1.12rem;margin:18px 0 30px;max-width:40ch;color:var(--body)}
+.tr{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.88rem;font-weight:600;color:var(--title)}
+.tr span{display:inline-flex;gap:7px;align-items:center}
+.tr .stz{color:#FFAA47;letter-spacing:1px}
+
+/* OP1 split */
+.s1{display:grid;grid-template-columns:1.05fr 1fr;min-height:560px}
+.s1 .tx{padding:clamp(34px,4.5vw,68px);display:flex;flex-direction:column;justify-content:center}
+.s1 .cta{display:flex;gap:12px;flex-wrap:wrap}
+.s1 .ph img{width:100%;height:100%;object-fit:cover}
+
+/* OP2 full-bleed centered */
+.s2{position:relative;min-height:600px;display:grid;place-items:center;text-align:center}
+.s2 img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s2::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,28,14,.5) 0%,rgba(18,28,14,.28) 45%,rgba(18,28,14,.5) 100%)}
+.s2 .in{position:relative;z-index:1;color:#fff;padding:48px 28px;max-width:720px}
+.s2 .eyebrow{color:#e2efd2}
+.s2 .h{color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.3)}
+.s2 .sub{color:rgba(255,255,255,.95);margin:18px auto 30px;text-shadow:0 1px 12px rgba(0,0,0,.25)}
+.s2 .tr{justify-content:center;color:#fff}
+
+@media(max-width:840px){
+  .s1{grid-template-columns:1fr}
+  .s1 .ph{min-height:260px;order:2}
+  .s1 .tx{order:1}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <h1>Las dos que te gustaron, ya afinadas</h1>
+    <p>Misma idea limpia, ahora rematadas. Dime <b>"la 1"</b> o <b>"la 2"</b> como cabecera definitiva y construyo el resto de la home con ese estilo. Si quieres mezclar algo de una en la otra, también me lo dices.</p>
+  </div>
+
+  <!-- OP1 split -->
+  <div class="frame">
+    <div class="tag"><span class="num">1</span><b>Dividida · texto a la izquierda, foto a la derecha</b></div>
+    <div class="s1">
+      <div class="tx">
+        <span class="eyebrow">Fabricante de césped artificial · Crevillent</span>
+        <div class="h">Césped artificial premium para el hogar</div>
+        <p class="sub">Máxima durabilidad, mínimo mantenimiento y una apariencia 100% natural.</p>
+        <div class="cta"><a class="btn btn-accent">Quiero presupuesto y muestras GRATIS</a><a class="btn btn-outg">Ver modelos</a></div>
+        <div class="tr"><span><i class="stz">★★★★★</i> 4,8 · +1.200 opiniones</span><span>· Garantía de 10 años</span><span>· Envío gratis +160 €</span></div>
+      </div>
+      <div class="ph"><img src="/assets/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen"></div>
+    </div>
+  </div>
+
+  <!-- OP2 full-bleed -->
+  <div class="frame">
+    <div class="tag"><span class="num">2</span><b>Foto a pantalla completa · texto centrado y sobrio</b></div>
+    <div class="s2">
+      <img class="bg" src="/assets/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen">
+      <div class="in">
+        <span class="eyebrow">Empieza a disfrutar de tus espacios de exterior</span>
+        <div class="h">Césped artificial premium para el hogar</div>
+        <p class="sub">Máxima durabilidad, mínimo mantenimiento y una apariencia 100% natural.</p>
+        <a class="btn btn-accent">Quiero presupuesto y muestras GRATIS</a>
+        <div class="tr"><span><i class="stz">★★★★★</i> 4,8 · +1.200 opiniones</span><span>· Garantía de 10 años</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keepgreen · Espacios — distribuciones</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#4c8032;--green-d:#3c6627;--green-l:#eef3e7;--title:#2f4a2a;--body:#3f4a39;--muted:#737a6c;--line:#e6e7e4;--font:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--body);background:#f4f6f1;line-height:1.6;padding:34px 20px 90px}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.page{max-width:1180px;margin:0 auto}
+.intro{margin-bottom:10px}
+.intro h1{font-size:1.5rem;color:var(--title);font-weight:800;letter-spacing:-.02em}
+.intro p{color:#5b6356;font-size:.96rem;max-width:80ch}
+.block{background:#fff;border:1px solid #e2e5de;border-radius:18px;padding:26px;margin-top:26px;box-shadow:0 12px 30px rgba(31,39,27,.07)}
+.lbl{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px}
+.lbl b{color:var(--title);font-size:1.05rem}
+.lbl .n{background:var(--green);color:#fff;font-weight:800;font-size:.85rem;width:26px;height:26px;border-radius:50%;display:grid;place-items:center}
+.lbl small{color:var(--muted);font-weight:600}
+
+/* shared tile */
+.t{position:relative;border-radius:14px;overflow:hidden;display:block}
+.t img{transition:transform .5s ease}
+.t:hover img{transform:scale(1.07)}
+.t::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,28,16,.72),rgba(18,28,16,.12) 45%,transparent 70%)}
+.t span{position:absolute;left:16px;bottom:14px;z-index:1;color:#fff;font-weight:700;font-size:1.12rem;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.cta{position:relative;border-radius:14px;background:linear-gradient(150deg,var(--green),var(--green-d));display:flex;flex-direction:column;justify-content:flex-end;padding:22px;overflow:hidden}
+.cta h4{color:#fff;font-size:1.28rem;font-weight:800;line-height:1.2;margin-bottom:9px}
+.cta .lnk{color:#fff;font-weight:700;font-size:.92rem;display:inline-flex;align-items:center;gap:7px}
+.cta.wide{flex-direction:row;align-items:center;justify-content:space-between}
+.cta.wide h4{margin-bottom:0;font-size:1.35rem}
+
+/* OPCIÓN B — destacada cuadrada + CTA banner ancho */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:172px;gap:16px}
+.bento .feat{grid-column:span 2;grid-row:span 2}
+.bento .cta{grid-column:span 4}
+
+/* OPCIÓN C — destacada apaisada + CTA vertical integrada */
+.edit{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:180px;gap:16px}
+.edit .wide2{grid-column:span 2}
+.edit .tall2{grid-row:span 2}
+
+@media(max-width:760px){
+  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .bento .feat{grid-column:span 2}
+  .bento .cta{grid-column:span 2}
+  .edit{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .edit .wide2,.edit .tall2{grid-column:span 2;grid-row:span 1}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <h1>Espacios · dos distribuciones para elegir</h1>
+    <p>Misma idea que te gustó (5 escenas reales + tarjeta verde de cierre), con dos ritmos distintos. Dime <b>"la B"</b> o <b>"la C"</b> y la dejo montada en la home.</p>
+  </div>
+
+  <!-- OPCIÓN B -->
+  <div class="block">
+    <div class="lbl"><span class="n">B</span><b>Destacada + banner</b><small>una foto grande manda · CTA en franja ancha abajo</small></div>
+    <div class="bento">
+      <a class="t feat" href="#"><img src="/assets/jardin.webp" alt="Jardín"><span>Jardín</span></a>
+      <a class="t" href="#"><img src="/assets/piscina.webp" alt="Piscina"><span>Piscina</span></a>
+      <a class="t" href="#"><img src="/assets/mascotas.webp" alt="Mascotas"><span>Mascotas</span></a>
+      <a class="t" href="#"><img src="/assets/balcon.webp" alt="Balcón"><span>Balcón</span></a>
+      <a class="t" href="#"><img src="/assets/ninos.webp" alt="Niños"><span>Niños</span></a>
+      <a class="cta wide" href="#"><h4>¿Otro espacio? Lo cubrimos.</h4><span class="lnk">Ver todos los espacios →</span></a>
+    </div>
+  </div>
+
+  <!-- OPCIÓN C -->
+  <div class="block">
+    <div class="lbl"><span class="n">C</span><b>Apaisada + CTA vertical</b><small>foto ancha arriba · CTA verde alta a la derecha</small></div>
+    <div class="edit">
+      <a class="t wide2" href="#"><img src="/assets/jardin.webp" alt="Jardín"><span>Jardín</span></a>
+      <a class="cta tall2" href="#"><h4>¿Otro espacio? Lo cubrimos.</h4><span class="lnk">Ver todos →</span></a>
+      <a class="t" href="#"><img src="/assets/piscina.webp" alt="Piscina"><span>Piscina</span></a>
+      <a class="t" href="#"><img src="/assets/balcon.webp" alt="Balcón"><span>Balcón</span></a>
+      <a class="t" href="#"><img src="/assets/ninos.webp" alt="Niños"><span>Niños</span></a>
+      <a class="t wide2" href="#"><img src="/assets/mascotas.webp" alt="Mascotas"><span>Mascotas</span></a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
